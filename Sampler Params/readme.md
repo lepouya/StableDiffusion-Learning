@@ -123,7 +123,11 @@ Every image is replayable by drag and dropping it into ComfyUI
 | euler_a    | ![](output/anime_00074_.png) | ![](output/anime_00084_.png) | ![](output/anime_00094_.png) | ![](output/anime_00104_.png) |
 | heun       | ![](output/anime_00075_.png) | ![](output/anime_00085_.png) | ![](output/anime_00095_.png) | ![](output/anime_00105_.png) |
 | dpm_2      | ![](output/anime_00076_.png) | ![](output/anime_00086_.png) | ![](output/anime_00096_.png) | ![](output/anime_00106_.png) |
+| dpm_2_a    | ![](output/anime_00113_.png) | ![](output/anime_00114_.png) | ![](output/anime_00115_.png) | ![](output/anime_00116_.png) |
+| lms        | ![](output/anime_00117_.png) | ![](output/anime_00118_.png) | ![](output/anime_00119_.png) | ![](output/anime_00120_.png) |
 | dpm_fast   | ![](output/anime_00077_.png) | ![](output/anime_00087_.png) | ![](output/anime_00097_.png) | ![](output/anime_00107_.png) |
+| dpm_adapt  | ![](output/anime_00121_.png) | ![](output/anime_00122_.png) | ![](output/anime_00123_.png) | ![](output/anime_00124_.png) |
+| dpmpp_2s_a | ![](output/anime_00125_.png) | ![](output/anime_00126_.png) | ![](output/anime_00127_.png) | ![](output/anime_00128_.png) |
 | dpmpp_sde  | ![](output/anime_00078_.png) | ![](output/anime_00088_.png) | ![](output/anime_00098_.png) | ![](output/anime_00108_.png) |
 | dpmpp_2m   | ![](output/anime_00079_.png) | ![](output/anime_00089_.png) | ![](output/anime_00099_.png) | ![](output/anime_00109_.png) |
 | ddim       | ![](output/anime_00080_.png) | ![](output/anime_00090_.png) | ![](output/anime_00100_.png) | ![](output/anime_00110_.png) |
