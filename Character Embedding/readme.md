@@ -107,7 +107,7 @@ Pare down to 25 good pics. Include different angles and zooms
 
 ## Custom testing prompts
 Back in txt2img tab:
-* Prompt: an extreme closeup color photo of %embedding name% in %sample scenario%
+* Prompt: a closeup photo of %embedding name% in %sample scenario%
 * Negative prompt: empty
 * Sampling method: Euler A
 * Sampling steps: 20
@@ -134,7 +134,7 @@ Back in txt2img tab:
 
 ## Comparison grid
 * Prompt:
-> a closeup color portrait photo of myCh4r4ct3rHere %in a simple situtation%
+> a closeup photo of myCh4r4ct3rHere %in a simple situtation%
 * Megative prompt: similar to the original generation
 * Sampling method: DPM++ 2M Karras
 * Sampling steps: 30
@@ -154,7 +154,7 @@ Back in txt2img tab:
 > myCh4r4ct3rHere, myCh4r4ct3rHere-20, myCh4r4ct3rHere-40, myCh4r4ct3rHere-60, myCh4r4ct3rHere-80, myCh4r4ct3rHere-100, myCh4r4ct3rHere-120, myCh4r4ct3rHere-140
 * Z type: `Nothing`
 * Draw Legend
-* * Do not Keep -1 for seeds
+* Do not Keep -1 for seeds
 * Grid margins (px): 16 (note: different to the default)
 
 ## Fine tuning
