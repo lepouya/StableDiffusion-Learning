@@ -1,7 +1,23 @@
-# Training photos
+# Automatic111 setup
 
-## Images filename pattern
+## Launch script
+```
+set PYTHON=
+set GIT=
+set VENV_DIR=
+set COMMANDLINE_ARGS=--xformers --opt-sdp-attention
+set PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.9,max_split_size_mb:512
+
+git pull
+```
+
+## Saving Images/Grids -> Images filename pattern
 `[prompt_spaces] ([seed].[datetime])`
+
+## User Interface -> Quichsettings list
+`sd_model_checkpoint, sd_vae`
+
+# Training photos
 
 ## Positive Prompt
 > an extreme closeup front shot photo of %your character's look% (naked:1.3), %your character's body shape%, %your character's hairstyle%, (neutral gray background:1.3), neutral face expression
