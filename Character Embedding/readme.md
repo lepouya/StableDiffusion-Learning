@@ -38,6 +38,8 @@
 * Draw Legend
 * Keep -1 for seeds
 
+## Generate
+
 ## Filtering
 * poor quality, messed up, cropped
 * clothing, jewlery, tattos, accessories, effects
@@ -69,3 +71,79 @@ Pare down to 25 good pics. Include different angles and zooms
 * Initialization text: A specific starting point for training to apply everything it has learned. Like `woman`
 * Number of vectors per token: 8-10 ish
 * Overwrite Old Embedding
+
+## Embedding setup
+* Switch back for sd 1.5 base checkpoint model for training
+* Embedding: char name
+* Hypernetwork: none
+* Embedding learning rate: `0.002:25, 0.001`
+* Gradient Clipping: disabled
+* Batch size: 1
+* Gradient accumulation steps: 1
+* Dataset directory: Where all the named and tagged images are
+* Prompt template: your custom template. With code `[name], [filewords]`
+* Width, Height: same as training pics
+* Max steps: ~150 is actually enough
+* Save image + embedding to log dir: every `5` steps
+* Save images with embedding in PNG chunks
+* Read parameters from txt2img tab when making previews
+* latent sample method: `once`
+
+## Custom testing prompts
+Back in txt2img tab:
+* Prompt: an extreme closeup color photo of %embedding name% in %sample scenario%
+* Negative prompt: empty
+* Sampling method: Euler A
+* Sampling steps: 20
+* Restore Faces: Off
+* Tiling: Off
+* Hires. fix: Off
+* Width: 512
+* Height: 512
+* Batch count: 1
+* Batch size: 1
+* CFG Scale: 7
+* Seed: -1
+* ControlNet: off
+* Script: None
+
+## Train
+
+# Validation
+
+## Prepare embeddings
+* Copy all generated embeddings to root-level embeddings folder
+* `Show/hide extra networks` in txt2img tab and refresh, hide it again afterwards
+* Switch back to the checkpoint/VAE that you want
+
+## Comparison grid
+* Prompt:
+> a closeup color portrait photo of myCh4r4ct3rHere %in a simple situtation%
+* Megative prompt: similar to the original generation
+* Sampling method: DPM++ 2M Karras
+* Sampling steps: 30
+* Restore Faces: Off
+* Tiling: Off
+* Hires. fix: Off
+* Width: 512
+* Height: 512
+* Batch count: 1
+* Batch size: 4
+* CFG Scale: 8 (note: higher than the default)
+* Seed: 12345678 (note: different to the default)
+* Script: `X/Y/Z Plot`
+* X type: `Nothing`
+* Y type: `Prompt S/R`
+* Y values:
+> myCh4r4ct3rHere, myCh4r4ct3rHere-20, myCh4r4ct3rHere-40, myCh4r4ct3rHere-60, myCh4r4ct3rHere-80, myCh4r4ct3rHere-100, myCh4r4ct3rHere-120, myCh4r4ct3rHere-140
+* Z type: `Nothing`
+* Draw Legend
+* * Do not Keep -1 for seeds
+* Grid margins (px): 16 (note: different to the default)
+
+## Fine tuning
+* Find out which one is best
+* switch to -5 increments and hone in on best one
+* Rename the embedding to the one without numbers, delete all the extra embeddings
+
+## Generate sample pics
