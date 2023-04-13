@@ -85,7 +85,7 @@ Pare down to 25 good pics. Include different angles and zooms
 ## Character embedding creation
 * Name: Choose a unique name that wouldn't appear in any other training. Use prefixes and numbers
 * Initialization text: A specific starting point for training to apply everything it has learned. Like `woman`
-* Number of vectors per token: 8-10 ish
+* Number of vectors per token: 8-16 ish
 * Overwrite Old Embedding
 
 ## Embedding setup
