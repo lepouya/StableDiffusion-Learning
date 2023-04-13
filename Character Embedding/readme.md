@@ -1,4 +1,4 @@
-# Automatic111 setup
+# Automatic1111 setup
 
 ## Launch script
 ```
