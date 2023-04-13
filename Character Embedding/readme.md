@@ -92,15 +92,15 @@ Pare down to 25 good pics. Include different angles and zooms
 * Switch back for sd 1.5 base checkpoint model for training
 * Embedding: char name
 * Hypernetwork: none
-* Embedding learning rate: `0.002:25, 0.001`
+* Embedding learning rate: `0.005:100, 1e-3:1000, 1e-5`
 * Gradient Clipping: disabled
 * Batch size: 1
 * Gradient accumulation steps: 1
 * Dataset directory: Where all the named and tagged images are
 * Prompt template: your custom template. With code `[name], [filewords]`
 * Width, Height: same as training pics
-* Max steps: ~150 is actually enough
-* Save image + embedding to log dir: every `5` steps
+* Max steps: 2500
+* Save image + embedding to log dir: every `100` steps
 * Save images with embedding in PNG chunks
 * Read parameters from txt2img tab when making previews
 * latent sample method: `once`
